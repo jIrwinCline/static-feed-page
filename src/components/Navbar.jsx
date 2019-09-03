@@ -3,9 +3,11 @@ import Search from './search';
 
 function Navbar() {
   var homeStyles = {
-    border: 'solid',
+    border: 'solid 1.5px lightgray',
     float: 'left',
-    fontFamily: 'Courier New',
+    fontFamily: 'Sans-serif',
+    padding: '10px',
+    textDecoration: 'none',
   };
   var floatStylesRight = {
     float: 'right',
@@ -14,16 +16,16 @@ function Navbar() {
     float: 'left',
   };
   var paddingStyles = {
-    paddingTop: '20px',
-    paddingBottom: '35px',
+    paddingTop: '10px',
+    paddingBottom: '45px',
   };
   return (
     <div >
       <nav style={paddingStyles}>
-        <div style={homeStyles}>
-          <a href="#">Home |</a>
-          <a href="#"> Notifications |</a>
-          <a href="#"> Messages </a>
+        <div>
+          <a style={homeStyles} href="#">Home</a>
+          <a style={homeStyles} href="#"> Notifications</a>
+          <a style={homeStyles} href="#"> Messages </a>
         </div>
 
         <a><button style={floatStylesRight}>

@@ -20,8 +20,18 @@ var masterFeedList = [
 ];
 
 function FeedList() {
+  var card = {
+    border: 'solid 1.5px lightgray',
+    width: '250px',
+    position: 'relative',
+    left: '255px',
+    bottom: '360px',
+    width: '400px',
+    height: '800px',
+    padding: '10px',
+  };
   return (
-        <div>
+        <div style={card}>
           {masterFeedList.map((feed, index) =>
             <Feed avatar={feed.avatar}
               name={feed.name}
